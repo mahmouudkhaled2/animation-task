@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // About us time line
   const aboutTl = gsap.timeline({
     defaults: {
-      ease: "power1.inOut",
+      ease: "none",
     },
     scrollTrigger: {
       trigger: "#about",
