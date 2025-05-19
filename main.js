@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
+  ScrollSmoother.create({
+  smooth: 1.5,
+  });
+  
   const heroTL = gsap
     .timeline({
       defaults: {
